@@ -1,0 +1,93 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 1.75em;
+}
+
+/* position h2 in the top right corner, make it 1.25 times the text size of the text, add a color, padding and a border */
+h2 {
+    font-size: 1.25em;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+/* the section has a border, a spacing and a background color */
+section {
+    position: relative;
+    background-color: lightgray;
+    border: 1px solid black;
+    margin: 15px;
+}
+
+/* spacing of the dummy text */
+p {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/* for the colors I chose just standard colors w/o hexa values; text should be readable depending on background */
+.chicken {
+    color: white;
+    background-color: brown;
+}
+
+.beef {
+    color: white;
+    background-color: red;
+}
+
+.sushi {
+    background-color: aqua;
+}
+
+/* mobile view */
+@media (max-width: 767px) {
+
+}
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+}
+
+/* desktop view */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+    }
+
+    .col-lg-4 {
+        width: 33.3%;
+    }
+}
